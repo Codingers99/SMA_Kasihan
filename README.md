@@ -1,2 +1,5 @@
 # SMA_Kasihan
-Untuk SMA satu Kasihan guna membangun Website Elearning
+Front end : Navbar, footer, assets, css style
+Back end : Create, Read, Update, Delete, --> dalam native
+Ci progress --> combine program to CI
+
