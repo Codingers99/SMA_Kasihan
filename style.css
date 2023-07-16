@@ -6,7 +6,8 @@
 }
 
 .a_action a{
-    color: white;
+    color: black;
+    font-weight : 400;
 }
 
 .a_action a:link{
@@ -14,19 +15,53 @@
 }
 
 .a_action a:actived{
-    color: white;
+    color: black;
 }
 
 .a_action a:visited{
-    color: white;
+    color: black;
+}
+
+.font_weight_400{
+    font-weight : 400;
 }
 
 .h_content{
     height: 280px;
 }
 
-.bg_color_nav{
-    background-color : #B3C890;
+.bg_color1{
+    background-color : #1C1F3C;
+}
+
+.bg_color2{
+    background-color : #9BABB8;
+}
+
+.bg_color3{
+    background-color : #D6E8DB;
+}
+
+.bg_color4{
+    background-color : #617A55;
+}
+
+.border_color1{
+    border : 1px solid #9BABB8;
+    color : black;
+}
+
+.text_color1{
+    color : #001A01;
+    opacity: 0.3;
+}
+
+.text_color_white{
+    color : white;
+}
+
+.text_color_white a{
+    color : white;
 }
 
 .bg_item_nav{
@@ -43,10 +78,21 @@
 }
 
 .text_content{
+    position: relative;
+    top: -37%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.text_content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.container_daftar{
+    width : 430px;
 }
 
 @media (max-width: 576px){
