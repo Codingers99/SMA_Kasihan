@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.transparant_absolut{
+}
+
 *{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -22,7 +25,11 @@
 }
 
 .bg_color4{
-    background-color : #617A55;
+    background-color : #C7C7C7;
+}
+
+.container_content{
+    height : 100vh;
 }
 
 /* navbar home.php, login.php */
@@ -61,13 +68,38 @@
     }
 /* footer */
 
-/* .h_content{
-    height: 280px;
-}
+/* profil dan logout user */
+    .profil_user{
+        height : 34px;
+        width : 140px;
+        margin : 0 0 0 40px;
+        border-radius : 5px;
+    }
 
-.width_content{
-    width : 15%; 
-} */
+    .logout_user{
+        height : 34px;
+        width : 140px;
+        margin : 9px 0 0 40px;
+        border-radius : 5px;
+    }
+    .profil_user a{
+        color : black;
+        font-weight : 500;
+    }
+
+    .profil_user a:link{
+        text-decoration : none;
+    }
+
+    .logout_user a{
+        color : black;
+        font-weight : 500;
+    }
+
+    .logout_user a:link{
+        text-decoration : none;
+    }
+/* profil dan logout user */
 
 /* home.php */
     .text_img_content_home{
@@ -131,32 +163,112 @@
 /* register.php */
 
 /* daftar_mapel.php */
-    /* .size_33{
-        width : 33px;
-        height : 33px;
+    .container_profil_daftar_mapel{
+        width : 180px;
+        border-radius : 5px;
     }
 
-    .height_33px{
-        height : 33px;
+    .profil_daftar_mapel{
+        height : 40px;
+        border-radius : 5px;
     }
 
-    .width_80{
-        width : 80%;
+    .profil_daftar_mapel img{
+        height : 40px;
+        width : 40px;
     }
 
-    .text-container{
-        width : 100%;
-        height : 100%;
+    .img_dashboard_user{
+        width : 50px;
+        height : 50px;
     }
 
-    .text{
-        font-size: 32px;
-        display: block;
-    } */
+    .img_profil_daftar_mapel{
+        height : 40px;
+        width : 40px;
+        border-radius : 5px 0 0 5px;
+    }
+
+    .text_profil_daftar_mapel{
+        height : 40px;
+        border-radius : 0 5px 5px 0;
+        font-weight : 500;
+    }
+
+    .img_book_user {
+        width : 50px;
+        height : 50px;
+    }
+
+    .text_mapel_user{
+        height : 50px;
+        padding-left : 10px;
+        font-size : 25px;
+        font-weight : 500;
+    }
+
+    .card_daftar_mapel{
+        background-color : white;
+        
+    }
+
+    .card_title{
+        font-size : 25px;
+        font-weight : 400;
+    }
 /* daftar_mapel.php */
+
+/* profil.php */
+    .text_profil_profil{
+        font-weight : 500;
+    }
+
+    .title_detail_pengguna_profil{
+        font-weight : 400;
+    }
+
+    .text_detail_pengguna_profil{
+        font-weight : 600;
+    }
+
+    .titik2_detail_pengguna_profil{
+        font-weight : 600;
+    }
+
+    .text_deskripsi_detail_pengguna_profil{
+        font-weight : 400;
+    }
+/* profil.php */
+
+/* admin.php */
+.container_menu_admin {
+    display : flex;
+    width : 120px;
+    height : 40px;
+    align-items : center;
+}
+
+.img_menu_admin img{
+    width : 25px;
+    height : 25px;
+}
+
+.text_menu_admin{
+    font-size : 20px;
+    font-weight : 500;
+}
+
+.container_content_admin{
+    height : 362px;
+}
+/* admin.php */
+
+
 
 
 /* ------------------------------------------------------ */
+
+
 
 
 @media (max-width: 576px){
@@ -260,6 +372,132 @@
         font-size : calc(9px + 1vw)!important;
     }
 /* register.php */
+
+/* img navbar mobile */
+.img_navbar_mobile{
+    height : 11vw;
+    width : 80vw;
+}
+/* img navbar mobile */
+
+/* profil dan logout user */
+.profil_user{
+    width : 14.7vw;
+    height : 6.5vw;
+    margin-left : 0!important;
+    font-size : 2.5vw;
+}
+
+.logout_user{
+    width : 14.7vw;
+    height : 6.5vw;
+    margin : 0 0 0 1vw;
+    font-size : 2.5vw;
+}
+
+.profil_daftar_mapel_mobile{
+    display : flex;
+}
+/* profil dan logut user */
+
+/* daftar_mapel.php */
+    .container_profil_daftar_mapel{
+        padding-left : 1vw;
+    }
+
+    .profil_daftar_mapel img{
+        height : 7.3vw;
+        width : 7.3vw;
+    }
+
+    .img_profil_daftar_mapel{
+        height : 7.3vw;
+        width : 7vw;
+    }
+
+    .text_profil_daftar_mapel{
+        width : 10vw;
+        height : 7.3vw;
+        font-size : 3.1vw;
+    }
+
+    .img_dashboard_user{
+        width : 9vw;
+        height : 9vw;
+    }
+
+    .img_book_user{
+        height : 9vw;
+        width : 9vw;
+    }
+
+    .text_mapel_user{
+        height : auto;
+        font-size : 5vw;
+    }
+
+    .img_card_daftar_mapel{
+        width : 61vw;
+        height : 45vw;
+    }
+
+    .card_title{
+        font-size : 4.3vw;
+        font-weight : 400;
+    }
+
+    .card_text{
+        font-size : 5vw;
+    }
+/* daftar_mapel.php */
+
+/* profil.php */
+    .container_profil_profil{
+        height : 12vw;
+    }
+
+    .img_profil_profil{
+        width : 12vw;
+        height : 12vw;
+    }
+
+    .img_profil_profil img{
+        width : 12vw;
+        height : 12vw;
+    }
+
+    .text_profil_profil{
+        width : 40vw;
+        height : 12vw;
+        font-size : 5vw;
+    }
+
+    .title_detail_pengguna_profil{
+        width : 100%;
+        font-size : 4vw;
+        padding-left : 2vw!important;
+    }
+
+    .text_detail_pengguna_profil{
+        width : 28vw;
+        height : 8vw;
+        font-size : 3.2vw;
+        padding-left : 4vw;
+        background-color : salmon;
+    }
+
+    .titik2_detail_pengguna_profil{
+        background-color : plum;
+        font-size : 3vw;
+    }
+
+    .text_deskripsi_detail_pengguna_profil{
+        display : flex;
+        align-items : center;
+        padding-left : 6px;
+        font-size : 3vw;
+    }
+/* profil.php */'
 }
 
 @media (min-width : 577px){
@@ -300,6 +538,70 @@
         width : 100px!important;
     }
 /* register.php */
+
+/* daftar_mapel.php */
+    .card_title{
+        font-size : 20px;
+        font-weight : 400;
+    }
+
+    .card_text{
+        font-size : 25px;
+    }
+/* daftar_mapel.php */
+
+/* profil.php */
+    .container_profil_profil{
+        height : 65px;
+    }
+
+    .img_profil_profil{
+        width : 65px;
+        height : 65px;
+    }
+
+    .img_profil_profil img{
+        width : 65px;
+        height : 65px;
+    }
+
+    .text_profil_profil{
+        width : 200px;
+        height : 65px;
+        font-size : 22px;
+    }
+
+    .title_detail_pengguna_profil{
+        width : 500px;
+        font-size : 18px;
+    }
+
+    .text_detail_pengguna_profil{
+        width : 300px;
+        height : 50px;
+        padding-left : 20px;
+        font-size : 20px;
+        background-color : salmon;
+    }
+
+    .titik2_detail_pengguna_profil{
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        width : 10px;
+        height : 50px;
+        font-size : 20px;
+    }
+
+    .text_deskripsi_detail_pengguna_profil{
+        display : flex;
+        align-items : center;
+        width : 764px;
+        height : 50px;
+        padding-left : 6px;
+        font-size : 17px;
+    }
+/* profil.php */
 }
 
 @media (min-width: 1024px){
@@ -326,6 +628,73 @@
         width : 105px!important;
     }
 /* register.php */
+
+/* profil.php */
+    .container_profil_profil{
+        height : 70px;
+    }
+
+    .img_profil_profil{
+        width : 70px;
+        height : 70px;
+    }
+
+    .img_profil_profil img{
+        width : 70px;
+        height : 70px;
+    }
+
+    .text_profil_profil{
+        width : 200px;
+        height : 70px;
+        font-size : 22px;
+    }
+
+    .title_detail_pengguna_profil{
+        width : 500px;
+        font-size : 20px;
+        font-weight : 400;
+    }
+
+    .text_detail_pengguna_profil{
+        background-color : salmon;
+        width : 267px;
+        height : 64px;
+        padding-left : 20px;
+        font-size : 25px;
+    }
+
+    .titik2_detail_pengguna_profil{
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        width : 10px;
+        height : 64px;
+        font-size : 25px;
+        font-weight : 600;
+    }
+
+    .text_deskripsi_detail_pengguna_profil{
+        display : flex;
+        align-items : center;
+        width : 764px;
+        height : 64px;
+        padding-left : 12px;
+        font-size : 22px;
+        font-weight : 400;
+    }
+/* profil.php */
+}
+
+@media (min-width: 1200px){
+    /* profil.php */
+        .text_detail_pengguna_profil{
+            background-color : salmon;
+            width : 206px;
+            height : 64px;
+            font-size : 25px;
+        }
+    /* profil.php */
 }
 
 @media (min-width: 1440px){
@@ -352,4 +721,56 @@
         width : 130px!important;
     }
 /* register.php */
+
+/* profil.php */
+    .container_profil_profil{
+        height : 80px;
+    }
+
+    .img_profil_profil{
+        width : 80px;
+        height : 80px;
+    }
+
+    .img_profil_profil img{
+        width : 80px;
+        height : 80px;
+    }
+
+    .text_profil_profil{
+        width : 216px;
+        height : 80px;
+        font-size : 25px;
+    }
+
+    .title_detail_pengguna_profil{
+        width : 500px;
+        font-size : 22px;
+    }
+
+    .text_detail_pengguna_profil{
+        width : 225px;
+        height : 64px;
+        padding-left : 20px;
+        font-size : 27px;
+    }
+
+    .titik2_detail_pengguna_profil{
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        width : 10px;
+        height : 64px;
+        font-size : 27px;
+    }
+
+    .text_deskripsi_detail_pengguna_profil{
+        display : flex;
+        align-items : center;
+        width : 764px;
+        height : 64px;
+        padding-left : 12px;
+        font-size : 25px;
+    }
+/* profil.php */
 }
