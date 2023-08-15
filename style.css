@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.font_weight_400{
+    font-weight : 400;
+}
+
+.bg_color1{
+    background-color : #1C1F3C;
+}
+
+.bg_color2{
+    background-color : #9BABB8;
+}
+
+.bg_color3{
+    background-color : #DEDEDE;
+}
+
+.bg_color4{
+    background-color : #617A55;
+}
+
+/* navbar home.php, login.php */
+    .a_action a{
+        color: black;
+        font-weight : 400;
+    }
+
+    .a_action a:link{
+        text-decoration: none;
+    }
+
+    .a_action a:hover{
+        background-color : #7E8A93;
+        border : 1px solid #7E8A93;
+    }
+
+    .a_action a:actived{
+        color: black;
+    }
+
+    .a_action a:visited{
+        color: black;
+    }
+
+    .border_color1{
+        border : 1px solid #9BABB8;
+        color : black;
+    }
+/* navbar home.php, login.php */
+
+/* footer */
+    .text_footer{
+        font-size : 12px;
+        color : #676767;
+    }
+/* footer */
+
+/* .h_content{
+    height: 280px;
+}
+
+.width_content{
+    width : 15%; 
+} */
+
+/* home.php */
+    .text_img_content_home{
+        position: relative;
+        top: -37%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text_img_content_home{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text_color1{
+        color : #001A01;
+        opacity: 0.3;
+    }
+/* home.php */
+
+/* login.php */
+    .input_login {
+        width : 450px;
+        font-size : 20px;
+        padding : 10px;
+    }
+
+    .button_login {
+        width : 95px;
+        height : 45px;
+        border : 1px solid #DEDEDE;
+        margin : 25px 0 35px 0;
+    }
+
+    .text_login {
+        font-size : 13px;
+    }
+/* login.php */
+
+/* register.php */
+    .container_register{
+        width : 430px;
+        font-size : 12px;
+    }
+
+    .input_register {
+        font-size : 12px;
+    }
+
+    .button_register{
+        border : none;
+        height : 35px;
+        width : 211px;
+        margin-top : 10px;
+        margin-bottom : 60px;
+        padding : 7px;
+        font-size : 15px;
+    }
+/* register.php */
+
+/* daftar_mapel.php */
+    /* .size_33{
+        width : 33px;
+        height : 33px;
+    }
+
+    .height_33px{
+        height : 33px;
+    }
+
+    .width_80{
+        width : 80%;
+    }
+
+    .text-container{
+        width : 100%;
+        height : 100%;
+    }
+
+    .text{
+        font-size: 32px;
+        display: block;
+    } */
+/* daftar_mapel.php */
+
+
+/* ------------------------------------------------------ */
+
+
+@media (max-width: 576px){
+/* popup login */
+    /* .modal-dialog{
+        width : 95vw;
+        height : 10px;
+        font-size : 3.5vw;
+    }
+
+    .modal-dialog input{
+        width : 75vw;
+        font-size : 4vw;
+    }
+
+    .modal-dialog button{
+        font-size : 4vw;
+    } */
+/* popup login */
+
+/* navbar home.php, login.php */
+    .img_navbar{
+        width : 82vw;
+    }
+
+    .btn_navbar{
+        width : calc(18vw + 2px)!important;
+        height : calc(8vw - 2px)!important;
+        font-size : calc(3vw - 2px)!important;
+        margin-top : 10px;
+        margin-bottom : 10px;
+        margin-left : calc(1vw + 2px);
+        margin-right : calc(1vw + 2px);
+        border-radius : 3px;
+    }
+/* navbar home.php, login.php */
+
+/* home.php */
+    .text_home{
+        font-size : calc(7vw - 2.2px);
+    }
+
+    .home_content{
+        font-size : calc(4.5vw - 2px)!important;
+    }
+
+    .img_content_home{
+        width: 70%;
+        margin: 0.5rem;
+    }
+/* home.php */
+
+    .bottom_content{
+        margin-bottom: 50px;
+    }
+    
+    .text_footer{
+        font-size : 3vw!important;
+    }
+
+
+/* login.php */
+    .input_login {
+        width : calc(90vw - 2px)!important;
+        /* width : calc(300px + 1vw)!important;
+        font-size : calc(8px + 1vw)!important; */
+        font-size : calc(3vw + 1px)!important;
+        padding : 10px;
+    }
+
+    .button_login {
+        width : 21vw!important;
+        height : 10vw!important;
+        font-size : calc(3vw + 1px)!important;
+        border : 1px solid #DEDEDE;
+        margin : 25px 0 35px 0;
+        border-radius : 3px;
+    }
+
+    .text_login {
+        font-size : 13px;
+    }
+/* login.php */
+
+
+/* register.php */
+    .img_head_register {
+        width : 20vw!important;
+    }
+
+    .title_register h2 {
+        font-size : calc(7vw - 5px);
+    }
+
+    .container_register{
+        width : 90vw!important;
+    }
+
+    .button_register{
+        width : 43.5vw!important;
+        font-size : calc(9px + 1vw)!important;
+    }
+/* register.php */
+}
+
+@media (min-width : 577px){
+/* navbar home.php, login.php */
+    .btn_navbar{
+        width : 20vw;
+        height : 9vw;
+        font-size : 3.2vw;
+        margin : 10px 5px;
+        border-radius : 5px;
+    }
+/* navbar home.php, login.php */
+}
+
+@media (min-width: 768px){
+/* navbar home.php, login.php */
+    .img_navbar{
+        width : 55vw;
+    }
+
+    .btn_navbar{
+        width : 78px!important;
+        height : 37px;
+        font-size : 12px;
+        margin : 10px 12px;
+        border-radius : 5px;
+    }
+/* navbar home.php, login.php */
+
+/* home.php */
+    .img_content_home{
+        width : 40vw!important;
+    }
+/* home.php */
+
+/* register.php */
+    .img_head_register {
+        width : 100px!important;
+    }
+/* register.php */
+}
+
+@media (min-width: 1024px){
+/* navbar home.php, login.php */
+    .btn_navbar{
+        width : 82px!important;
+        height : 35px;
+        font-size : 12px;
+        margin : 0 8px;
+        border-radius : 5px;
+    }
+/* navbar home.php, login.php */
+
+/* home.php */
+    .img_content_home{
+        width : 22vw!important;
+        margin-top : -50px;
+        margin-bottom : -50px;
+    }
+/* home.php */
+
+/* register.php */
+    .img_head_register {
+        width : 105px!important;
+    }
+/* register.php */
+}
+
+@media (min-width: 1440px){
+/* navbar home.php, login.php */
+    .btn_navbar{
+        width : 100px!important;
+        height : 42px;
+        font-size : 15px;
+    }
+/* navbar home.php, login.php */
+
+/* home.php */
+    .home_content{
+        font-size : 16.5px;
+    }
+
+    .img_content_home{
+        width : 20vw!important;
+    }
+/* home.php */
+
+/* register.php */
+    .img_head_register {
+        width : 130px!important;
+    }
+/* register.php */
+}
