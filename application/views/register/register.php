@@ -7,7 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?= base_url('/style/style.css')?>">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <div class="container-xxl">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center py-3">
-                    <img class="img_head_register" src="logo-daftar.png" alt="">
+                    <img class="img_head_register" src="<?php echo base_url(); ?>asset/logo-daftar.png" alt="">
                 </div>
             </div>
         </div>
@@ -29,11 +29,11 @@
     <!-- header -->
 
     <!-- content -->
-    <div class="container-fluid py-3">
+    <div class="container-fluid py-3 container_height">
         <div class="text-center title_register my-3">
             <h2>Pendaftaran Peserta Baru</h2>
         </div>
-        <form action="<?php echo base_url()?>index.php/elearning/register_user" method="POST">
+        <form action="<?php echo base_url()?>auth/register_user" method="POST">
             <div class="container-xxl d-flex justify-content-center">
                 <div class="row justify-content-center container_register p-2 bg_color1 text-light">
                     <!-- NIS/NISN -->
@@ -42,7 +42,7 @@
                             <label for="nisn" class="form-label">NIS/NISN</label>
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-4 col-12">
-                            <input type="text" class="input_register form-control" name="id_user">
+                            <input type="text" class="input_register form-control" name="kode_user">
                         </div>
                     </div>
                     <!-- NIS/NISN -->
@@ -50,10 +50,10 @@
                  <!-- username -->
 				 <div class="row align-items-center mt-2">
                         <div class="d-flex align-items-center col-lg-4 col-md-4 col-sm-4 col-12 pt-2">
-                            <label for="username" class="form-label">Username</label>
+                            <label for="kode_user" class="form-label">Nama</label>
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-4 col-12">
-                            <input type="text" class="input_register form-control" name="username">
+                            <input type="text" class="input_register form-control" name="nama">
                         </div>
                     </div>
                     <!-- username -->
@@ -91,17 +91,6 @@
                     </div>
                     <!-- Alamat dan Kode Pos -->
                 
-                    <!-- Nama Lengkap -->
-                    <div class="row align-items-center">
-                        <div class="d-flex align-items-center col-lg-4 col-md-4 col-sm-4 col-12 pt-2">
-                            <label for="nama" class="form-label">Nama Lengkap</label>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-4 col-12">
-                            <input type="text" class="input_register form-control" name="nama">
-                        </div>
-                    </div>
-                    <!-- Nama Lengkap -->
-                
                     <!-- No Whatsapp -->
                     <div class="row align-items-center mt-2 mb-4">
                         <div class="d-flex align-items-center col-lg-4 col-md-4 col-sm-4 col-12 pt-2">
@@ -114,11 +103,11 @@
                     <!-- No Whatsapp -->
                 </div>
             </div>
-
+			<input type="text" class="input_register form-control" name="acc_status" value="1">
             <!-- Button -->
             <div class="d-flex justify-content-center w-100">
                 <button type="submit" class="button_register text-light me-1 bg-primary">Buat Keanggotaan</button>
-                <a class="d-flex justify-content-center align-items-center text-decoration-none button_register text-light ms-1 bg-danger" href="index.php">Batal</a>
+                <a class="d-flex justify-content-center align-items-center text-decoration-none button_register text-light ms-1 bg-danger" href="<?php echo base_url()?>auth/login">Batal</a>
             </div>
             <!-- Button -->
         </form>
