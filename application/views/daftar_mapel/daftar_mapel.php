@@ -22,50 +22,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-
+		
+	
   <!-- header -->
-  <div class="container-fluid py-3 d-flex align-items-center bg_color1">
-    <div class="container-xxl">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-8 col-8">
-          <div class="row h-100 justify-content-center align-content-center">
-            <img class="img-fluid img_navbar_mobile" src="<?= base_url('/asset/image 6.png')?>" alt="">
-          </div>
-        </div>
-
-        <div class="d-flex col-lg-2 offset-lg-6 col-md-6 col-sm-4 col-4 p-0 justify-content-end align-items-center">
-          <!-- Nama Profil -->
-          <div class="container_profil_daftar_mapel" id="btn_logout">
-            <div class="d-flex align-items-center profil_daftar_mapel w-100">
-              <div class="img_profil_daftar_mapel bg_color2">
-                <img src="<?= base_url('/asset/user.png')?>" alt="">
-              </div>
-              <div class="d-flex justify-content-center align-items-center text_profil_daftar_mapel w-100 bg_color2">
-							<?= $this->session->userdata('nama'); ?>
-              </div>
-            </div>
-          </div>
-          <!-- Nama Profil -->
-
-          <!-- Tombol detail profil dan logout -->
-          <div class="container_profil_daftar_mapel d-none" id="btn_show">
-            <div class="profil_daftar_mapel_mobile">
-              <a href="profil_user.php">
-                <div class="d-flex justify-content-center align-items-center profil_user bg-white">
-                  Profil
-                </div>
-              </a>
-              <form action="<?php echo base_url()?>auth/login">
-                <button class="d-flex justify-content-center align-items-center logout_user border-0 bg-white">Logout</button>
-    				</form>
-            </div>
-          </div>
-          <!-- Tombol detail profil dan logout -->
-
-        </div>
-      </div>
-    </div>
-  </div>
+	<?php $this->load->view('./template/header.php'); ?>
   <!-- header -->
 
   <!-- content -->
@@ -73,7 +33,8 @@
     <div class="container-xxl">
       <div class="container">
         <div class="pt-2">
-          <a href="daftar_mapel.php"><img class="img_dashboard_user bg_color1" src="<?= base_url('/asset/dasboard-logo.png')?>" alt=""></a>
+				<a href="<?php echo base_url(); ?>elearning/mapel"><img class="img_dashboard_user" src="<?php echo base_url(); ?>asset/dasboard-logo.png" alt=""></a>
+                    <a href="<?php echo base_url(); ?>elearning/list_mapel"><img class="img_list_mapel" src="<?php echo base_url(); ?>asset/book.png" alt=""></a>
         </div>
         <div class="row mt-2 mb-lg-4 mb-md-4 mb-3">
           <div class="col-12 bg_color4">
@@ -102,14 +63,14 @@
                   <div class="row">
                     <div class="col-6">
                       <!-- <p class="card-title fs-5"><?php ?></p> -->
-                      <p class="card_title"><?php echo $data->jenis_mapel?></p>
+                      <p class="card_title"><?php echo $data->nama_mapel?></p>
                     </div>
                     <div class="col-6 text-end">
                       <img src="<?= base_url('/asset/there_dot.png')?>" alt="">
                     </div>
                   </div>
                   <!-- <h2 class="card-text"><?php ?></h2> -->
-                  <h2 class="card_text"><?php echo $data->nama_mapel?></h2>
+                  <h2 class="card_text"><?php echo $data->guru_mapel?></h2>
                 </div>
               </div>
             </div>

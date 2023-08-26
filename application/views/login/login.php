@@ -27,7 +27,7 @@
             </div>
             <div class="col-lg-4 offset-lg-4 col-md-12 offset-md-0 col-sm-12 offset-sm-0 a_action">
             <div class="row h-100 justify-content-center align-items-center">
-			a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>elearning">HOME</a>
+			<a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>elearning">HOME</a>
                 <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>auth/login">MASUK</a>
                 <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>auth/register">DAFTAR</a>
             </div>
@@ -50,7 +50,7 @@
                     <button type="submit" class="rounded-3 button_login shadow-sm">Login</button>
                     </div>
                 </form>
-                <p class="mb-5 text-center text_login">Belum Memiliki Akun? <a href="register.php">Klik disini untuk Daftar</a></p>
+                <p class="mb-5 text-center text_login">Belum Memiliki Akun? <a href="<?php echo base_url()?>auth/register">Klik disini untuk Daftar</a></p>
             </div>
         </div>
         </div>

@@ -31,4 +31,9 @@ class Elearning extends CI_Controller {
 			$this->load->view('profile/profil_user.php',$data);
 			}
 
+		public function list_mapel(){
+			$data['data_elearning'] = $this->m_elearning->data_elearning();
+			$this->load->view('daftar_mapel/list_mapel.php',$data);
+			}
+
 }

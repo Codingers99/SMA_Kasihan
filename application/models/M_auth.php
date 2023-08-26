@@ -5,7 +5,7 @@ class M_auth extends CI_model{
 		$this->load->database();
 }
 public function data_auth(){
-$query = $this->db->get('auth');
+$query = $this->db->get('user');
 return $query->result();
 }
 

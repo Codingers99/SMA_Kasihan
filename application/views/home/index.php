@@ -17,26 +17,34 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
+	<?php 
+	$checksession = $this->session->has_userdata('acc_status');
+	if($checksession): ?>
+	<!-- header2 -->
+	<?php $this->load->view('./template/header.php'); ?>
+  <!-- header -->
+  <?php else: ?>
     <!-- Header -->
     <div class="container-fluid py-2 bg_color1">
         <div class="container-xxl">
         <div class="row">
             <div class="col-lg-4 col-sm-12 col-12">
             <div class="row h-100 justify-content-center align-content-center">
-                <img class="img-fluid img_navbar" src="<?php echo base_url(); ?>asset/image 6.png" alt="">
+                <img class="img-fluid img_navbar" src="<?php echo base_url(); ?>asset/image 6.png" alt="" href="<?php echo base_url()?>elearning">
             </div>
             </div>
             <div class="col-lg-4 offset-lg-4 col-md-12 offset-md-0 col-sm-12 offset-sm-0 a_action">
             <div class="row h-100 justify-content-center align-items-center">
-                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>index.php/elearning">HOME</a>
-                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>index.php/elearning/login">MASUK</a>
-                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>index.php/elearning/register">DAFTAR</a>
+                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>elearning">HOME</a>
+                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>auth/login">MASUK</a>
+                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>auth/register">DAFTAR</a>
             </div>
             </div>
         </div>
         </div>
     </div>
     <!-- Header -->
+  <?php endif; ?>
 
     <!-- Content -->
     <div class="container-fluid p-lg-5 p-md-5 p-sm-5 p-3">
@@ -138,5 +146,22 @@
     </div>
     <!-- footer -->
 </body>
+<script>
+    // The classList property returns the CSS classnames of an element.
+    const btn = document.getElementById("btn_logout");
+    const btnShow = document.getElementById("btn_show").classList;
+    const back = document.getElementById("back");
+    const btnClass = btn.classList;
+    
 
+    btn.addEventListener('click',  () => {
+      btnClass.add('d-none')
+      btnShow.remove('d-none')
+    })
+
+    back.addEventListener('click', () => {
+      btnClass.remove('d-none')
+      btnShow.add('d-none')
+    })
+  </script>
 </html>
