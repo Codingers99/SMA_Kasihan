@@ -24,50 +24,7 @@
         crossorigin="anonymous"></script>
 
         <!-- header -->
-        <div class="container-fluid py-3 d-flex align-items-center bg_color1">
-        <div class="container-xxl">
-            <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-8 col-8">
-                <div class="row h-100 justify-content-center align-content-center">
-                <img class="img-fluid img_navbar_mobile" src="<?php echo base_url(); ?>asset/image 6.png" alt="">
-                </div>
-            </div>
-
-            <div class="d-flex col-lg-2 offset-lg-6 col-md-6 col-sm-4 col-4 p-0 justify-content-end align-items-center">
-                <!-- Nama Profil -->
-                <div class="container_profil_daftar_mapel" id="btn_logout">
-                <div class="d-flex align-items-center profil_daftar_mapel w-100">
-                    <div class="img_profil_daftar_mapel bg_color2">
-                    <img src="<?php echo base_url(); ?>asset/user.png" alt="">
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center text_profil_daftar_mapel w-100 bg_color2">
-                    Munandar
-                    </div>
-                </div>
-                </div>
-                <!-- Nama Profil -->
-
-                <!-- Tombol detail profil dan logout -->
-                <div class="container_profil_daftar_mapel d-none" id="btn_show">
-                <div class="profil_daftar_mapel_mobile">
-                    <a href="profil.php">
-                    <div class="d-flex justify-content-center align-items-center profil_user bg-white">
-                        Profil
-                    </div>
-                    </a>
-                    <a href="">
-                    <div class="d-flex justify-content-center align-items-center logout_user bg-white">
-                        Logout
-                    </div>
-                    </a>
-                </div>
-                </div>
-                <!-- Tombol detail profil dan logout -->
-
-            </div>
-            </div>
-        </div>
-        </div>
+		<?php $this->load->view('./template/header.php'); ?>
         <!-- header -->
 
         <!-- content -->

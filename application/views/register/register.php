@@ -16,17 +16,26 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-    <!-- header -->
-    <div class="container-fluid  bg_color1">
+     <!-- Header -->
+	 <div class="container-fluid py-2 bg_color1">
         <div class="container-xxl">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center py-3">
-                    <img class="img_head_register" src="<?php echo base_url(); ?>asset/logo-daftar.png" alt="">
-                </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 col-12">
+            <div class="row h-100 justify-content-center align-content-center">
+                <img class="img-fluid img_navbar" src="<?php echo base_url(); ?>asset/image 6.png" alt="">
+            </div>
+            </div>
+            <div class="col-lg-4 offset-lg-4 col-md-12 offset-md-0 col-sm-12 offset-sm-0 a_action">
+            <div class="row h-100 justify-content-center align-items-center">
+			<a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>elearning">HOME</a>
+                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>auth/login">MASUK</a>
+                <a class="d-flex bg_color2 border_color1 btn_navbar align-items-center justify-content-center" href="<?php echo base_url()?>auth/register">DAFTAR</a>
+            </div>
             </div>
         </div>
+        </div>
     </div>
-    <!-- header -->
+    <!-- Header -->
 
     <!-- content -->
     <div class="container-fluid py-3 container_height">
@@ -103,7 +112,7 @@
                     <!-- No Whatsapp -->
                 </div>
             </div>
-			<input type="text" class="input_register form-control" name="acc_status" value="1">
+			<input type="hidden" class="input_register form-control" name="acc_status" value="1">
             <!-- Button -->
             <div class="d-flex justify-content-center w-100">
                 <button type="submit" class="button_register text-light me-1 bg-primary">Buat Keanggotaan</button>
