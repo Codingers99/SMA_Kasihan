@@ -40,10 +40,10 @@
                             <div class="d-flex justify-content-center align-items-center w-100 text_menu_admin">Menu</div>
                         </button>
                         <ul class="dropdown-menu bg_color1" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item text-light" href="<?php echo base_url()?>admin">Dashboard</a></li>
-                            <li><a class="dropdown-item text-light" href="<?php echo base_url()?>admin/manajemen_kelas">Manajemen Kelas</a></li>
-                            <li><a class="dropdown-item text-light" href="<?php echo base_url()?>admin/manajemen_mapel">Mata Pelajaran</a></li>
-                            <li><a class="dropdown-item text-light" href="<?php echo base_url()?>admin/manajemen_tugas">Manajemen Tugas/Quiz</a></li>
+						<li><a class="dropdown-item text-dark" href="<?php echo base_url()?>admin">Dashboard</a></li>
+                            <li><a class="dropdown-item text-dark" href="<?php echo base_url()?>admin/manajemen_kelas">Manajemen Kelas</a></li>
+                            <li><a class="dropdown-item text-dark" href="<?php echo base_url()?>admin/manajemen_mapel">Mata Pelajaran</a></li>
+                            <li><a class="dropdown-item text-dark" href="<?php echo base_url()?>admin/manajemen_tugas">Manajemen Tugas/Quiz</a></li>
                         </ul>
                     </div>
 

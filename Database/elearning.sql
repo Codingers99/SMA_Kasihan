@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 21, 2023 at 06:21 PM
+-- Generation Time: Aug 26, 2023 at 11:09 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -57,25 +57,20 @@ CREATE TABLE `kelas` (
 
 CREATE TABLE `mata_pelajaran` (
   `id_mapel` int(11) NOT NULL,
+  `kode_mapel` varchar(11) NOT NULL,
   `nama_mapel` varchar(50) NOT NULL,
-  `jenis_mapel` varchar(50) NOT NULL
+  `guru_mapel` varchar(50) NOT NULL,
+  `desc_mapel` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `mata_pelajaran`
 --
 
-INSERT INTO `mata_pelajaran` (`id_mapel`, `nama_mapel`, `jenis_mapel`) VALUES
-(18, 'Wahyu', 'SDATA'),
-(19, 'Wahyu', 'SDATA'),
-(20, 'Wahyu', 'SDATA'),
-(21, 'Wahyu', 'SDATA'),
-(22, 'Wahyu', 'SDATA'),
-(23, 'Wahyu', 'SDATA'),
-(24, 'Wahyu', 'SDATA'),
-(25, 'Wahyu', 'SDATA'),
-(26, 'Wahyu', 'SDATA'),
-(27, 'Wahyu', 'SDATA');
+INSERT INTO `mata_pelajaran` (`id_mapel`, `kode_mapel`, `nama_mapel`, `guru_mapel`, `desc_mapel`) VALUES
+(18, 'A-1', 'Biologi', 'Munandar', 'Deskripsi'),
+(19, 'A-2', 'MTK', 'Budi', 'Deskripsi'),
+(20, 'A-3', 'Sosiologi', 'Johnny', 'Deskripsi');
 
 -- --------------------------------------------------------
 
@@ -131,7 +126,8 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id_user`, `email`, `kode_user`, `nama`, `password`, `no_telp`, `alamat`, `acc_status`) VALUES
 (1, 'd', 12345678, 'Guru', 'guru12345678', 0, 'e', 2),
 (2, 'DD', 2000018309, 'Siswa', 'user12345678', 0, 'EE', 1),
-(4, 'difidoblackwight@gmail.com', 2000018300, 'Nama', 'Password', 853213232, 'Rejokusuman Jl. Pasopati No.3, Sokowaten, Tamanan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55191', 1);
+(4, 'difidoblackwight@gmail.com', 2000018300, 'Nama', 'Password', 853213232, 'Rejokusuman Jl. Pasopati No.3, Sokowaten, Tamanan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55191', 1),
+(5, '4', 1, '2', '3', 6, '5', 0);
 
 --
 -- Indexes for dumped tables
@@ -181,7 +177,7 @@ ALTER TABLE `jadwal_pelajaran`
 -- AUTO_INCREMENT for table `mata_pelajaran`
 --
 ALTER TABLE `mata_pelajaran`
-  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `materi`
@@ -199,7 +195,7 @@ ALTER TABLE `tugas`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
