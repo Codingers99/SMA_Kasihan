@@ -56,4 +56,23 @@
   </div>
   </head>
 </head>
+<script>
+    // The classList property returns the CSS classnames of an element.
+    const btn = document.getElementById("btn_logout");
+    const btnShow = document.getElementById("btn_show").classList;
+    const back = document.getElementById("back");
+    const btnClass = btn.classList;
+    
+
+    btn.addEventListener('click',  () => {
+      btnClass.add('d-none')
+      btnShow.remove('d-none')
+    })
+
+    back.addEventListener('click', () => {
+      btnClass.remove('d-none')
+      btnShow.add('d-none')
+    })
+  </script>
 <body>
+	
