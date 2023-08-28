@@ -984,6 +984,10 @@
         display : flex!important;
     }
 
+    .menu .img_list_mapel{
+        margin-left : 9.5px;
+    }
+
     .menu form{
         display : flex!important;
         justify-content : flex-end!important;

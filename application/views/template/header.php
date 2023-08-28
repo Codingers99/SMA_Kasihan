@@ -54,7 +54,6 @@
       </div>
     </div>
   </div>
-  </head>
 </head>
 <script>
     // The classList property returns the CSS classnames of an element.
@@ -74,5 +73,4 @@
       btnShow.add('d-none')
     })
   </script>
-<body>
 	

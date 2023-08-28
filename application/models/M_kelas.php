@@ -1,5 +1,5 @@
 <?php
-class M_elearning extends CI_model{
+class M_kelas extends CI_model{
 	public function __construct() {
 		parent::__construct();
 		$this->load->database();
@@ -23,7 +23,6 @@ return $query->result();
 public function data_kelas(){
 	$this->db->select('*');
 	$this->db->from('kelas');
-	$this->db->join('mata_pelajaran', 'mata_pelajaran.kode_mapel = kelas.kode_mapel');
 	$query = $this->db->get();
 return $query->result();
 }

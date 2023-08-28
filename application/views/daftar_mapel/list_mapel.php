@@ -56,7 +56,7 @@
 
                 <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-4 pb-4 container_card_daftar_mapel">
                 <!-- LAKUKAN PERULANGAN -->
-                <!-- <?php //for() ?> -->
+				<?php foreach ($data_elearning as $data) : ?>
                     <div class="card p-0 container_card_list_mapel">
                         <div class="row g-0">
                             <div class="col-md-4 d-flex justify-content-center align-items-center img_card_list_mapel bg-warning">
@@ -64,18 +64,17 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title ct_mobile">Judul Mata Pelajaran</h5>
+                                    <h5 class="card-title ct_mobile"><?php echo $data->nama_mapel ?></h5>
+									<h6 class="card-title ct_mobile"><?php echo $data->nama_kelas ?></h6>
                                     <div class="d-flex box_title bg_color3">
                                         <div class="box_ket">
                                         Pengajar :
                                         </div>
                                         <div class="box_name">
-                                        Dr.Stein
+                                        <?php echo $data->guru_mapel ?>
                                         </div>
                                     </div>
-                                    <p class="card-text card_desc_list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt quas
-                                        distinctio molestias alias quae eveniet, nesciunt necessitatibus odit! Quaerat, soluta quia similique aut
-                                        accusamus repellendus commodi. Optio, saepe veritatis.</p>
+                                    <p class="card-text card_desc_list"><?php echo $data->desc_mapel ?></p>
                                     <form class="daftar_list" action="">
                                         <input type="text">
                                         <p class="card-text card_key_list"><small class="text-muted">Enrolment key</small></p>
@@ -87,38 +86,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- CONTOH JIKA ADA 2 MAPEL -->
-                    <div class="card p-0 container_card_list_mapel">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex justify-content-center align-items-center img_card_list_mapel bg-warning">
-                                <img src="<?php echo base_url(); ?>asset/mapel-sub.png" class="img_card_daftar_mapel img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title ct_mobile">Judul Mata Pelajaran</h5>
-                                    <div class="d-flex box_title bg_color3">
-                                        <div class="box_ket">
-                                        Pengajar :
-                                        </div>
-                                        <div class="box_name">
-                                        Dr.Stein
-                                        </div>
-                                    </div>
-                                    <p class="card-text card_desc_list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt quas
-                                        distinctio molestias alias quae eveniet, nesciunt necessitatibus odit! Quaerat, soluta quia similique aut
-                                        accusamus repellendus commodi. Optio, saepe veritatis.</p>
-                                    <form class="daftar_list" action="">
-                                        <input type="text">
-                                        <p class="card-text card_key_list"><small class="text-muted">Enrolment key</small></p>
-                                        <div class="text-end">
-                                            <button class="btn btn-secondary">Daftar</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+					<?php endforeach; ?>
                 <!-- <?php ?> -->
                 </div>
             </div>

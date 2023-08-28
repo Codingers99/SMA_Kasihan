@@ -9,8 +9,12 @@
     font-weight : 400;
 }
 
+.dropdown-menu{
+    background-color : #1C1F3C!important;
+}
+
 .bg_color1{
-    background-color : #1C1F3C;
+    background-color : #1C1F3C!important;
 }
 
 .bg_color2{

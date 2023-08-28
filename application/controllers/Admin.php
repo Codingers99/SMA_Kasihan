@@ -8,6 +8,7 @@ class Admin extends CI_Controller {
         $this->load->model('m_admin');
 		$this->load->library('form_validation');
 		$this->load->library('session');
+		$this->load->helper('string');
     }
 		public function index()
 		{
@@ -93,6 +94,29 @@ class Admin extends CI_Controller {
 		function hapus_matapelajaran($id_mapel)
 		{
 			$this->m_admin->hapus_mapel($id_mapel);
+			redirect('admin/');
+		}
+
+		Public Function UploadKelas()
+		{
+			
+			$nama_kelas = $this->input->Post('nama_kelas');
+			$guru = $this->input->Post('guru');
+			$enroll_key =  random_string('alnum',7);
+			$Base64Gambar = $_FILES["gambar"]["tmp_name"];
+			// $mapel = $this->input->Post('mapel');
+			$mapel = "mapel";
+			$Path = "Upload/";
+			$ImagePath = $enroll_key. "_pic.Png";
+			Move_uploaded_file($Base64Gambar, $ImagePath);
+			$DataArr = Array(
+				'nama_kelas' => $nama_kelas,
+				'guru' => $guru,
+				'enroll_key' => $enroll_key,
+				'mapel' => $mapel,
+				'Gambar' => Base_url() . $ImagePath,
+			);
+			$this->db->insert('kelas', $DataArr);
 			redirect('admin/');
 		}
 }

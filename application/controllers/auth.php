@@ -44,11 +44,12 @@ class Auth extends CI_Controller {
 				'password'=>$this->input->post('password'),
 				'no_telp'=>$this->input->post('no_telp'),
 				'alamat'=>$this->input->post('alamat'),
+				'acc_status'=>$this->input->post('acc_status'),
 			);
 			$this->db->insert('user',$data); //Inputan masuk ke database (Mirip query)
 			redirect('auth/login', $data);
 		}
-		
+
 			function checklogin(){
 				$admin_login=array(
 					'kode_user'=>$this->input->post('kode_user'),
@@ -57,7 +58,7 @@ class Auth extends CI_Controller {
 				);
 				$this->form_validation->set_rules('kode_user', 'Username', 'required');
 				$this->form_validation->set_rules('password','Password', array('required', 'min_length[8]'));
-		
+
 				if($this->form_validation->run() != false){
 				$data=$this->m_auth->login_admin($admin_login['kode_user'],$admin_login['password'],$admin_login['acc_status']);
 					if($data && $data['acc_status'] === '1')
@@ -68,7 +69,7 @@ class Auth extends CI_Controller {
 								'acc_status' => $data['acc_status'],
 								'logged_in' => TRUE
 						);
-						
+
 						$this->session->set_userdata($newdata);
 							redirect('elearning/mapel', $data);
 					}
