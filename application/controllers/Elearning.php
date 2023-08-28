@@ -32,7 +32,7 @@ class Elearning extends CI_Controller {
 			}
 
 		public function list_mapel(){
-			$data['data_elearning'] = $this->m_elearning->data_elearning();
+			$data['data_elearning'] = $this->m_elearning->data_kelas();
 			$this->load->view('daftar_mapel/list_mapel.php',$data);
 			}
 

@@ -23,5 +23,12 @@ function hapus_mapel($id_mapel)
 {
 	$this->db->delete('mata_pelajaran',array('id_mapel' => $id_mapel));
 }
+Function GetDataKelas() {
+	$query = $this->db->Get('kelas');
+	Return $query->Result();
+}
+Function InsertDataKelas($data) {
+	$this->db->insert('kelas', $data);
+}
 }
 ?>

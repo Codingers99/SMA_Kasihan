@@ -55,12 +55,12 @@
                         <div class="title_form" style="font-weight : 500;">
                             Tambah Data Kelas
                         </div>
-                        <form action="" method="">
+                        <form action="<?php echo base_url()?>admin/UploadKelas" method="POST" Enctype="Multipart/Form-Data">
                             <div class="container_input">
                                 <div class="title_input">
                                     Nama Kelas
                                 </div>
-                                <input type="text" name="">
+                                <input type="text" name="nama_kelas">
                             </div>
 
                             <div class="container_input">
@@ -72,23 +72,16 @@
 
                             <div class="container_input">
                                 <div class="title_input">
-                                    Wali Kelas
+                                    Guru
                                 </div>
-                                <input type="text" name="">
-                            </div>
-
-                            <div class="container_input">
-                                <div class="title_input">
-                                    Enrollkey
-                                </div>
-                                <input type="text" name="">
+                                <input type="text" name="guru">
                             </div>
 
                             <div class="container_input">
                                 <div class="title_input">
                                     Cover Kelas
                                 </div>
-                                <input type="file" name="">
+                                <input type="file" name="gambar" Accept="Image/*">
                             </div>
 
                             <button class="btn btn-success" type="">Simpan</button>
